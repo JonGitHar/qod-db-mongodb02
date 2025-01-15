@@ -2,7 +2,7 @@ FROM mongo:latest
 
 ENV MONGO_INITDB_ROOT_USERNAME=user \
     MONGO_INITDB_ROOT_PASSWORD=pass \
-    MONGO_INITDB_DATABASE=qod
+    MONGO_INITDB_DATABASE=qod02
 
 COPY mongo-init.js /docker-entrypoint-initdb.d/
 COPY quotes.json /docker-entrypoint-initdb.d/
